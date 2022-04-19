@@ -1,0 +1,190 @@
+/* CSS Reset --------------------*/
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+    padding: 5px;
+    border-spacing: 5px;
+}
+*{
+    box-sizing: border-box;
+}
+
+/* General ---------ZAIDH IMRAN IMRZAI001----------- */
+
+header{
+    font-family:  Cambria, 'Times New Roman', Times, serif;
+}
+body{
+    padding: 10px;
+    font-size: 20px;
+    font-family: Muli,Arial,Helvetica,sans-serif;
+}
+section, article{
+    align-self: center;
+    align-content: center;
+    margin:5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    align-content: center;
+}
+
+div {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    align-content: center;
+}
+span {
+    background-color: white;
+    padding: 10px;
+}
+nav {
+    background-color: #f7f8fa;
+    color:darkgray;
+}
+table{
+    font-family: Muli, Arial, Helvetica, sans-serif;
+    margin: auto;
+    padding: 5px;
+    border-spacing: 5px;
+}
+fieldset{
+    background-color: #f7f8fa;
+    padding: 0;
+    margin: 0;
+}
+
+p, ul, li{
+    font-size: 18px;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-left: auto;
+}
+
+footer{
+    margin-bottom: auto;
+    margin: 5px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+/* Typography -------------------- */
+
+h1, h2, h3, h4{
+    text-align: center;
+}
+h3{
+    color: rgb(110, 49, 49);
+}
+h4 {
+    color:rgb(5, 28, 70);
+}
+
+/* Specifics -------------------- */
+
+a {
+    color: rgb(54, 53, 53);
+    text-decoration: none;
+    
+}
+a:visited{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration:wavy;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+a:active{
+    color: darkgray;
+}
+
+a:focus{
+    background-color: lightgrey;
+}
+
+.top{
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin: 0px;
+
+}
+
+form {
+    margin: auto;
+  }
+  input {
+    padding: 4px 10px;
+    border: 0;
+    font-size: 16px;
+  }
+  input:hover{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  .search {
+    width: 75%;
+  }
+  .submit {
+    width: 70px;
+    background-color: rgb(54, 53, 53);
+    color: #ffffff;
+  }
+  .search:hover{
+    box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+form #contact{
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+}
+
+form #contact legend{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+form #wish{
+    border: 1;
+}
+
+
+div .about .contact {
+    margin-left: auto;
+    text-align: left;
+}
+div .shopnow{
+    width: 200;
+    height: 80;
+}
+
+

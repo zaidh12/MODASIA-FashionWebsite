@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home | Modasia</title>
+    <meta charset="utf-8">
+        <link rel="stylesheet" href="mystyles.css">
+        <script type="text/javascript">
+            var userInput = localStorage.userInfo;
+    
+            function remove(inputID){
+                if(userInput!=null) userInput-=" ";
+                else userInput="";
+                    userInput -= document.getElementById(inputID).value = ' ';
+                    localStorage.userInfo -= userInput
+                    document.getElementById("result").innerHTML = "Your wishlist includes: " + localStorage.userInfo;
+            }
+
+            function clear_All(){
+                document.getElementById('wishListField').value = ' ';
+                localStorage.clear('text');
+                document.getElementById("result").innerHTML = "Your wishlist is empty: " + localStorage.userInfo;
+            }
+    
+        
+            function storeText(inputID) {
+                //check to see if the localStorage item already exists
+                
+                //set it up for new data to be appended
+                if(userInput!=null) userInput+=" ";
+                else userInput="";
+                //add the new data
+                    userInput += document.getElementById(inputID).value;
+                    //set the localStorage field with the updated data
+                    localStorage.userInfo = userInput;
+                    //write it to the page
+                    document.getElementById("result").innerHTML = "\nYour wishlist includes: " + localStorage.userInfo ;
+            }
+
+        </script>
+</head>
+<body>
+    <section class="top">ONLINE FASHION PIONEERS. We are still static, but keep a look out, online orders can be placed soon.</section>
+    <header>
+        <a href="home.html"><h1>MODASIA</h1></a>
+    </header>
+    <nav>
+        <table cellspacing = "5" cellpadding = "5">
+            <tr>
+                <td><a>
+                    <form> 
+                        <input type="text" name="text" placeholder="Search here!">
+                        <input type="submit" name="search" value="Search">
+                      </form>
+                    </a></td>
+                <td><a href="home.html">Home</a></td>
+                <td><a href = products.html>Products</a></td>
+                <td><a href = trending.html>Trending</a></td>
+                <td><a href = new_arrivals.html>New Arrivals</a></td>
+                <td><a href = about.html>About</a></td>
+                <td><a href = contact.html>Contact</a></td>
+                <td><a href="https://www.flaticon.com/free-icons/user" title="(Temporary) user icons User icons created by mattbadal - Flaticon>">
+                    <img src="img/support.png" alt="support" width="20" height="20">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.flaticon.com/free-icons/support" title="(Temporary) support icons Support icons created by alimasykurm - Flaticon">
+                        <img src="img/shopping-cart.png" alt="support" width="20" height="20">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.flaticon.com/free-icons/shopping-cart" title="(Temporary) shopping cart icons Shopping cart icons created by Ayub Irawan - Flaticon">
+                        <img src="img/account.png" alt="support" width="20" height="20">
+                    </a>
+                </td>
+                </td>
+            </tr>
+        </table>
+    </nav>
+    <br>
+    
+    <table cellspacing = "5px" cellpadding = "5px" font-size="18">
+        <tr>
+            <td><a href="contact.html" titel="Apologies">
+                <img src="img/stock2.jpg" alt="men's styles" width="400" height="600"></a>
+            <td>
+                <a href="contact.html" titel="Apologies">
+                    <img src="img/stock3.jpg" alt="men's styles" width="400" height="600"></a>
+            </td>
+            <td>
+                <a href="contact.html" titel="Apologies">
+                    <img src="img/stock1.jpg" alt="men's styles" width="400" height="600"></a>
+            </td>
+        </tr>
+    </table>
+    
+    <article>
+        <a href="contact.html" titel="Apologies">
+        <input  type="submit" name="submit" value="Shop now" alt="Shop now">
+        </a>
+    </article>
+    <br>
+    <section>
+            <video preload controls>
+                <source src="video/Video 1.mp4" type="video/mp4; 'codecs='avc1.42E01E, mp4a.40.2"/>
+            </video>
+    </section>
+    <section>
+        <video preload controls>
+            <source src="video/Video 2.mp4" type="video/mp4; 'codecs='avc1.42E01E, mp4a.40.2"/>
+        </video>
+</section>
+    <section>
+        <section margin-bottom="50px"  padding="10px"><a href="contact.html" title="Apologies"><h2>NOW ON PROMO</h2>
+        </a></section>
+        <img src="img/promo1.jpg" alt="on promo" width="403" height="260">
+        <img src="img/promo2.jpg" alt="on promo" width="403" height="260">
+        <img src="img/promo3.jpg" alt="on promo" width="403" height="260">
+    </section>
+    <section><a href="contact.html" titel="Apologies"><h3> Buy t-shirts, shirts and jeans for 25% off for the next week</h3></a></section>
+    
+    <section>
+        <h2>ADD TO A WISHLIST</h2>
+        <h4>Enter any products at all that you wish to add or remove and we'll take it from there.</h4>
+        <form id="wish"> 
+            <input type="text" id="wishListField"  placeholder="Add to wishlist"/>
+            <input type="button" value="Store" onclick="storeText('wishListField')"/>
+            <input type="button" value="Remove" onclick="remove('wishListField')"/>
+            <input type="button" value="Clear" onclick="window.clear_All()"/>
+            <div id="result">
+            Result here
+            </div>
+          </form>
+    </section>
+
+    <section>
+        <section><a href="contact.html" titel="Apologies"><h2>Check the latest fashion trends worldwide</h2></a></section>
+        <img src="img/trend5.jpg" alt="trends" width="330" height="415">
+        <img src="img/trend1.jpg" alt="trends" width="330" height="415">
+        <img src="img/trend4.jpg" alt="trends" width="330" height="415">
+    </section>  
+    <hr>
+    <footer>
+        <section>
+            <table cellspacing = "5" cellpadding = "5">
+                <tr>
+                    <td> 17 Lascelles Street, Rondebosch, 7729, Cape Town, South Africa</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> © MODASIA 2022. All rights reserved. Designed by Zaidh Imran</td>
+                </tr>
+            </table>
+        </section>
+    </footer>
+</body  >
+</html>
